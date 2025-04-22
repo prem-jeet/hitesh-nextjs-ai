@@ -1,0 +1,22 @@
+POST http://localhost:3000/api/sign-up
+Content-Type: application/json
+
+{
+    "username": "prem",
+    "email":"jeet4300795@gmail.com",
+    "password": "12345678"
+
+}
+
+### sign in
+POST http://localhost:3000/api/sign-in
+Content-Type: application/json
+
+{
+    "email":"jeet4300795@gmail.com",
+    "password": "12345678"
+
+}
+
+### duplicate username check
+GET http://localhost:3000/api/check-username-unique?username=prem
